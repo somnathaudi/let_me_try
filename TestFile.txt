@@ -1,0 +1,40 @@
+DEVELOPMENT PROCESS
+1. Developer gets requirements and starts development in his/her folder in BUDev Org
+2. Developer does the unit testing.
+3. On satisfactory completion of unit testing, developer invites peers/team for code review.
+4. On successful completion of code review, developer informs gatekeeper/admin to move the code to protected folder in BUDEV Org.
+5. One round of unit testing is done from protected folder in Dev Org.
+6. After successful completion, based on release calendar and QA dates, gatekeeper/admin invokes SL pipeline to pull necessary code from GitHub into BUTest Org
+7. QA team tests the code in BUTest Org.
+8. On successful QA signoff, again based on relase calendar and PROD migration dates, gatekeeper/admin invokes SL pipeline to pull necessary code from GitHub into BUProd Org.
+
+
+
+
+VERSIONING PROCESS
+1. 
+
+
+production deployment plan. backing out from production will require going to git hub to get the last version. save current production version as renamed folder or export it out to your disk. roll back will be quicker. github will be a bit slower.
+test deployment plan (do not need backoout plan)
+
+
+Table with individual access plan, admin group, developer group
+
+
+
+
+
+getCustomerOrder and Print it
+
+getCustomerOrder_Print
+
+getCustomerOrderAndPrint
+
+always remove special characters like , % $ - etc 
+use _ separatpor in the name to demarcate source(s) and targets(s) in pipeline names
+use z or _ to start a child pipeline name
+
+triggerCustomerOrderLoad
+
+
